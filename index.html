@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta property="og:title" content="拉霸機" />
+        <meta property="og:description" content="拉霸機任何人都會玩，只要點選「開始轉動！」按鈕，圖案或文字便開始轉動，如果 轉動停止的時候，圖案或文字符合贏的規定，便算是中了彩。"/>
+        <meta property="og:locale" content="zh_TW" />
+        <meta property="og:type" content="website" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css" integrity="sha512-oc9+XSs1H243/FRN9Rw62Fn8EtxjEYWHXRvjS43YtueEewbS6ObfXcJNyohjHqVKFPoXXUxwc+q1K7Dee6vv9g==" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="css/slot-machine.css" type="text/css" />
+        <title>拉霸機</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="card">
+                <div class="card-body">
+                    <div class="card-title">圖片</div>
+                    <div class="card-text">
+                        <div class="slotwrapper" id="image-container">
+                            <ul>
+                                <li><img src="images/200x200x1.png" /></li>
+                                <li><img src="images/200x200x2.png" /></li>
+                                <li><img src="images/200x200x3.png" /></li>
+                                <li><img src="images/200x200x4.png" /></li>
+                                <li><img src="images/200x200x5.png" /></li>
+                                <li><img src="images/200x200x6.png" /></li>
+                            </ul>
+                            <ul>
+                                <li><img src="images/200x200x1.png" /></li>
+                                <li><img src="images/200x200x2.png" /></li>
+                                <li><img src="images/200x200x3.png" /></li>
+                                <li><img src="images/200x200x4.png" /></li>
+                                <li><img src="images/200x200x5.png" /></li>
+                                <li><img src="images/200x200x6.png" /></li>
+                            </ul>
+                            <ul>
+                                <li><img src="images/200x200x1.png" /></li>
+                                <li><img src="images/200x200x2.png" /></li>
+                                <li><img src="images/200x200x3.png" /></li>
+                                <li><img src="images/200x200x4.png" /></li>
+                                <li><img src="images/200x200x5.png" /></li>
+                                <li><img src="images/200x200x6.png" /></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <button type="button" class="btn btn-success btn-lg" id="image-start-spin">開始轉動！</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <div class="card-title">帶有聲音</div>
+                    <div class="card-text">
+                        <div class="slotwrapper" id="text-with-sound-container">
+                            <ul>
+                                <li>1</li>
+                                <li>2</li>
+                                <li>3</li>
+                                <li>4</li>
+                                <li>5</li>
+                                <li>6</li>
+                                <li class="text-danger">7</li>
+                            </ul>
+                            <ul>
+                                <li>1</li>
+                                <li>2</li>
+                                <li>3</li>
+                                <li>4</li>
+                                <li>5</li>
+                                <li>6</li>
+                                <li class="text-danger">7</li>
+                            </ul>
+                            <ul>
+                                <li>1</li>
+                                <li>2</li>
+                                <li>3</li>
+                                <li>4</li>
+                                <li>5</li>
+                                <li>6</li>
+                                <li class="text-danger">7</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <button type="button" class="btn btn-success btn-lg" id="text-with-sound-start-spin">開始轉動！</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js" integrity="sha512-0QbL0ph8Tc8g5bLhfVzSqxe9GERORsKhIn1IrpxDAgUsbBGz/V7iSav2zzW325XGd1OMLdL4UiqRJj702IeqnQ==" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.3/umd/popper.min.js" integrity="sha512-53CQcu9ciJDlqhK7UD8dZZ+TF2PFGZrOngEYM/8qucuQba+a+BXOIRsp9PoMNJI3ZeLMVNIxIfZLbG/CdHI5PA==" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.min.js" integrity="sha512-8qmis31OQi6hIRgvkht0s6mCOittjMa9GMqtK9hes5iEQBQE/Ca6yGE5FsW36vyipGoWQswBj/QBm2JR086Rkw==" crossorigin="anonymous"></script>
+        <script src="js/slotmachine.min.js"></script>
+        <script src="js/slot-machine.js"></script>
+    </body>
+</html>
